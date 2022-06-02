@@ -1,5 +1,5 @@
 {
-  "name": "merge-xml",
+  "name": "simple-xml-merge",
   "version": "0.1.0",
   "description": "Lightweight, zero-dependencies library for merging multiple XMLs.",
   "keywords": [
