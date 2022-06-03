@@ -1,6 +1,8 @@
 {
   "name": "simple-xml-merge",
   "version": "0.1.1",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "description": "Lightweight, zero-dependencies library for merging multiple XMLs.",
   "keywords": [
     "xml",
