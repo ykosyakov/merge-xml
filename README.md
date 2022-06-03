@@ -12,17 +12,27 @@ npm install simple-xml-merge
 ### Basic example
 
 ```ts
-const xmlData1: string = //read xml from fs/network/Buffer
-const xmlData2: string = //read xml from fs/network/Buffer
+import { mergeXml } from 'simple-xml-merge';
+
+const xmlData1: string = ''; //read xml from fs/network/Buffer
+const xmlData2: string = ''; //read xml from fs/network/Buffer
 const mergedXml = mergeXml(xmlData1, xmlData2);
+
+//Serialize and use
+console.log(mergedXml.toString());
 ```
 
 ## Example with node "name" comparator
 
 ```ts
-const xmlData1: string = //read xml from fs/network/Buffer
-const xmlData2: string = //read xml from fs/network/Buffer
+import { mergeXml } from 'simple-xml-merge';
+
+const xmlData1: string = ''; //read xml from fs/network/Buffer
+const xmlData2: string = ''; //read xml from fs/network/Buffer
 const mergedXml = mergeXml(xmlData1, xmlData2, (node1, node2) => node1.name === node2.name);
+
+//Serialize and use
+console.log(mergedXml.toString());
 ```
 
 With comparator it's possible to define rules for nodes merge.
