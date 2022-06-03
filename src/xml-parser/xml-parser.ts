@@ -1,4 +1,3 @@
-import { notEqual } from 'assert';
 import { XmlAttribute } from '../common/classes/xml-attribute';
 import { XmlDocument } from '../common/classes/xml-document';
 import { XmlNode } from '../common/classes/xml-node';

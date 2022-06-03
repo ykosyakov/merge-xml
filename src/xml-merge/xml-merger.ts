@@ -1,6 +1,5 @@
 import { XmlDocument } from '../common/classes/xml-document';
 import { XmlNode } from '../common/classes/xml-node';
-import { fullNodeComparator } from './node-comparators';
 
 export type NodesComparator = (node1: XmlNode, node2: XmlNode) => boolean;
 

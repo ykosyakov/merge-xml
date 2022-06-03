@@ -30,7 +30,7 @@ export class XmlNode {
 		return this.attributes.map((attribute) => new XmlAttribute(attribute.name, attribute.value));
 	}
 
-	toString(level: number = 0) {
+	toString(level = 0) {
 		const levelTab = '  '.repeat(level);
 		const attributesString = this.attributes.length ? ` ${this.attributes.map((attribute) => attribute.toString()).join(' ')} ` : '';
 
