@@ -64,7 +64,7 @@ export class XmlParser {
 
 	private stringToNode(nodeText: string): XmlNode {
 		const nodeAttributesText = Array.from(nodeText.match(/[\w\d_]+="[^<>&"']+"/gm) ?? []);
-		const nodeName = Array.from(nodeText.match(/<\/?[\w\d_?]+/) ?? [])[0]
+		const nodeName = Array.from(nodeText.match(/<\/?[\w\d_?-]+/) ?? [])[0]
 			?.replace('<', '')
 			?.replace('/', '');
 
